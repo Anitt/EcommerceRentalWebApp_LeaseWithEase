@@ -1,0 +1,53 @@
+.content-left,
+.content-right {
+	display: none;
+}
+
+.content-center {
+	width: 100%;
+	/* Source: http://wallpaperswide.com/laptop_4-wallpapers.html */
+	background: url("../images/computers.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100%;
+}
+
+.content-center span {
+	font-family: 'PlayfairDisplay-Italic';
+	display: block;
+	margin: 2em 0em 0em 2em;
+	font-size: 4em;
+	color: #FFFFFF;
+}
+
+/**
+ * Responsive design
+ */
+
+@media only screen and (max-width: 768px) {
+	.content-center span {
+		font-size: 3em;
+		margin: 9em 0em 0em 2em;
+		color: #F5F5F5;
+	}
+
+	.content-center {
+		/* Source: http://wallpaperswide.com/laptop_4-wallpapers.html */
+		background: url("../images/computers-768.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+}
+
+@media only screen and (max-width: 320px) {
+	.content-center span {
+		font-size: 2em;
+		margin: 2em;
+		color: #F5F5F5;
+	}
+
+	.content-center {
+		/* Source: http://wallpaperswide.com/laptop_4-wallpapers.html */
+		background: black;
+	}
+}

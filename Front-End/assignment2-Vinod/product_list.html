@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lease with ease</title>
+    <meta name="viewport" content="width=device-width">
+    <!--Source for below library http://blog.getbootstrap.com/2015/06/15/bootstrap-3-3-5-released/ -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!--source of below library https://cdnjs.com/libraries/font-awesome >>> library used to provide star rating feature-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- source of below library https://blog.jquery.com/2011/11/21/jquery-1-7-1-released/-->
+    <script type="text/javascript" src="jquery/http_code.jquery.com_jquery-1.7.1.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css"> <!--style sheet -->
+    <script type="application/javascript" src="js/script.js"></script> <!--javascript file -->
+</head>
+<body>
+<div class="container product-list">
+    <!-- header portion-->
+    <div class="well well-lg header">
+        <div class="row">
+            <div class="col logo-pdts"> <!-- application logo as a button, while on press to be directed to home-->
+                <button class="btn btn-default" onclick="tohome('non-payment')">
+                    <img src="images/logo3.jpg" style="width: 100%;object-fit: contain">
+                </button>
+            </div>
+            <div class="col">
+                <div class="row user-prof">  <!--Signout and cart links -->
+                    <!--<a href="cart.jsp" class="btn btn-info btn-lg"><span class="glyphicon glyphicon-shopping-cart"></span></a> &nbsp &nbsp;-->
+                    <!--<a href="register.jsp"><span class="glyphicon glyphicon-user"></span>&nbspSign out</a>-->
+                    <a onclick="alert('Not yet implemented')" class="btn btn-info btn-lg"><span class="glyphicon glyphicon-shopping-cart"></span></a> &nbsp &nbsp;
+                    <a onclick="alert('Not yet implemented')"><span class="glyphicon glyphicon-user"></span>&nbspSign out</a>
+                </div>
+                <div class="row searchbar"><!--Search bar with a dropdown facility to choose the category of product -->
+                    <div class="input-group">
+                        <div class="input-group-btn">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Category<span class="caret"></span></button>
+                            <ul class="dropdown-menu" role="menu">
+                                <li>
+                                    <a href="#">Headphones</a>
+                                </li>
+                                <li>
+                                    <a href="#">Harddisks</a>
+                                </li>
+                                <li>
+                                    <a href="#">Laptops</a>
+                                </li>
+                                <li>
+                                    <a href="#">Desktops</a>
+                                </li>
+                            </ul>
+                            <!--<select id = "select-category">-->
+                                <!--<option value="Headphones">Headphones</option>-->
+                                <!--<option value="Harddisks">Harddisks</option>-->
+                                <!--<option value="Laptops">Laptops</option>-->
+                                <!--<option value="Desktops">Desktops</option>-->
+                                <!--<option value="none" selected>Category</option>-->
+                            <!--</select>-->
+                        </div>
+                        <input type="text" class="form-control" aria-label="abc">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default" type="submit" onclick="alert('Not yet implemented')"><i class="glyphicon glyphicon-search"></i></button>
+                        </div>
+                    </div>
+                </div><br>
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+
+    <div class="container pdt-list" >
+        <div class="row"> <!-- option to filter the products that are displyed by checking on the necessary category and brands-->
+            <div class="col-sm-2">
+                <button type="button" class="btn btn-sm btn-primary" data-toggle="collapse" data-target="#pdt-check-list"><span class="glyphicon glyphicon-collapse-down"></span>Electronics</button>
+                <div id="pdt-check-list" class="collapse">
+                    <div  class="checkbox">
+                        <label><input type="checkbox">Desktop</label>
+                    </div>
+                    <div  class="checkbox">
+                        <label><input type="checkbox">Laptop</label>
+                    </div>
+                    <div class="checkbox">
+                        <label><input type="checkbox">Headphones</label>
+                    </div>
+                    <div class="checkbox">
+                        <label><input type="checkbox">Harddisk</label>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-sm btn-primary" data-toggle="collapse" data-target="#pdt-brand-list"><span class="glyphicon glyphicon-collapse-down"></span>Featured Brands</button>
+                <div id="pdt-brand-list" class="collapse">
+                    <div  class="checkbox">
+                        <label><input type="checkbox">Apple</label>
+                    </div>
+                    <div  class="checkbox">
+                        <label><input type="checkbox">Dell</label>
+                    </div>
+                    <div class="checkbox">
+                        <label><input type="checkbox">HP</label>
+                    </div>
+                    <div class="checkbox">
+                        <label><input type="checkbox">LG</label>
+                    </div>
+                </div>
+
+            </div>
+            <!-- product list portion, products list are dynamically generated through script-->
+            <div class="col-sm-10 list-divider" >
+                <div class="container products" >
+                </div>
+            </div>
+        </div>
+
+        </div>
+
+       <!--footer portion-->
+    <div class="well well-lg footer"> Lease with Ease
+
+    </div>
+</div>
+<script>
+    display_products();
+    $(".dropdown-menu").on('click','li a',function()
+    {
+        $(this).parent().parent().siblings(".btn:first-child").html($(this).text());
+        $(this).parent().parent().siblings(".btn:first-child").val($(this).text());
+
+    });
+</script>
+
+<!--JQuery JavaScript libraries -->
+<!--Source for Jquery library https://developers.google.com/speed/libraries/-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<!-- source for javascript library http://blog.getbootstrap.com/2015/06/15/bootstrap-3-3-5-released/-->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+

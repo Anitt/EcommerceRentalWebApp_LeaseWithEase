@@ -1,0 +1,88 @@
+html{
+	font-size:15px;
+	font-family: "Montserrat", sans-serif;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    html {font-size:12px;}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    html {font-size:13px;}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    html {font-size:14px;}
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    html {font-size:15px;}
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    html {font-size:15px;}
+}
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,.1);
+	height: 2px;
+	box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+}
+
+.button:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+
+.button{
+	display: inline-block;
+    font-weight: 400;
+    text-align: center;
+	color: #FFF;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1em;
+    line-height: 1.5;
+    border-radius: .25rem;
+	font-family: "Montserrat", sans-serif;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+*{
+     font-family: "Montserrat", sans-serif;
+}
+
+.topnavigation span a:hover, .topnavigation span a:visited, .topnavigation span a:active , .topnavigation span a:focus  {
+    text-decoration: none;
+	outline: none;
+	/* color: green; */
+}
+a, a:hover, a:focus{
+	text-decoration:none;
+}
+.topnavigation span a:hover ,
+ .topnavigation span a:focus {
+	 color: #F2B900;
+}
+
+.toprightnavigation{
+	    margin: auto 0 auto;
+}
+@media screen and (max-width: 600px) {
+    .topnavigation{
+	    font-size: 0.79em;
+}
+}

@@ -1,0 +1,118 @@
+/* * {box-sizing: border-box;} */
+body{
+	margin:0;
+}
+
+a{
+	color: white;
+	text-decoration:none;
+}
+.topnavigation {
+    height: 10vh;
+    transition: all 0.5s;
+    background: #123673;
+    color: #fff;
+    font-weight: 450;
+    /* width: 100%; */
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+}
+.topcentrenavigation {
+    margin: auto auto auto 0;
+}
+    .homepageinput-grp{
+        width: min-content;
+    }
+.topnavigationcart{
+	height: 20px;
+    font-weight: bolder;
+    width: 30px;
+    /* margin-top: -5px; */
+}
+.topnavigation span{
+    cursor:pointer;
+}
+.topleftnavigation{
+	    margin: auto 10px;
+	display: flex;
+}
+a {
+    text-decoration: none;
+}
+
+.topnavigation input[type=text] {
+       padding: 6px;
+	   
+    color: black;
+    /* margin-top: 8px; */
+    font-size: 0.769em;
+    width: fit-content;
+    /* min-width: 185px; */
+    border: none;
+    /* width: 30%; */
+    border-radius: 4px;
+}
+
+.toprightnavigation span {
+    margin: auto 1rem;
+}
+.topnavigation .search-container button {
+    background: #0d1010;
+    color: white;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+}
+.topnavigation .search-container button:hover {
+  /* background: #ccc; */
+  border:none;
+  outline:none;
+    color: #F2B900;
+} 
+
+@media screen and (max-width: 600px) {
+  .topnavigation .search-container {
+   /*  float: none; */
+  }
+  .topnavigation span, .topnavigation input[type=text], .topnavigation .search-container button {
+/* 
+    display: block;
+    text-align: left;
+    padding: 14px; */
+  }
+  .topnavigation input[type=text] {
+   /*  border: 1px solid #ccc;   */
+  }
+}
+
+.topnavigation span:hover {
+    color: #F2B900;
+}
+
+#myCarousel,
+#myCarousel .carousel-inner,
+#myCarousel .carousel-inner div.item
+ {
+	height: inherit;
+}
+
+.container.carousel-parentcontainer{
+    height: 35vh;
+}
+
+.topnavigation .topcentrenavigation .btn {
+    /* font-size: 13px; */
+}
+
+.container.producitems-homepage{
+	padding:0px;
+	    margin-right: 10px;
+    margin-left: 10px;
+    width: auto;
+	    margin-bottom: 1em;
+	
+}

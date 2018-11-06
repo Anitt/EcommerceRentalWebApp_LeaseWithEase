@@ -1,0 +1,117 @@
+/**
+ * To make the page height 100%.
+ */
+html, body {
+	margin: 0;
+	height: 100%;
+}
+
+.main {
+	height: calc(100% - 8vh);
+	/* Make sure that the footer height and the padding-bottom match */
+	/* padding-bottom: 2em; */
+	overflow: hidden;
+	min-width: 960px;
+}
+
+/**
+ * Content.
+ */
+.content-body {
+	height: calc(100% - 10vh);
+	overflow: auto;
+}
+
+.content-left {
+	float: left;
+	width: 33%;
+}
+
+.content-right {
+	float: right;
+	width: 33%;
+}
+
+.content-center {
+	float: right;
+	width: 34%;
+}
+
+/**
+ * Overrides.
+ */
+.btn-primary {
+	background-color: #0F1626;
+	border-color: #0F1626;
+}
+
+/**
+ * Responsive design
+ */
+
+@media only screen and (max-width: 768px) {
+	.main {
+		min-width: 768px;
+	}
+
+	.header-search-input {
+		width: calc(75% - 9em);
+	}
+
+	.footer {
+		min-width: 768px;
+	}
+}
+
+@media only screen and (max-width: 320px) {
+	.main {
+		min-width: 320px;
+	}
+
+	.header {
+		height: 25%;
+		min-height: 210px;
+	}
+
+	.footer {
+		min-width: 320px;
+	}
+
+	.logo {
+		display: none;
+	}
+
+	.header-menu {
+		height: 30%;
+	}
+	.menu-item {
+		padding-top: 1em;
+	}
+
+	.header-search {
+		height: 70%;
+		padding-top: 1em;
+	}
+
+	.header-content {
+		padding-left: .5em;
+	}
+
+	.header-search-select {
+		width: 100%;
+		float: none;
+		padding-bottom: 1em;
+		padding-right: .5em;
+	}
+	
+	.header-search-input {
+		width: calc(100% - 6.5em);
+		float: left;
+		padding-right: .5em;
+	}
+	
+	.header-search-submit {
+		width: 6em;
+		padding-right: .5em;
+	}
+}

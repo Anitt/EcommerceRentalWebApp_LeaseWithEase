@@ -1,0 +1,86 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link type="text/css" rel="stylesheet" href="css/normalize.css" />
+		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+		<link type="text/css" rel="stylesheet" href="css/commonCSS.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	</head>
+
+	<body>
+		<div class="maindiv">
+			<div class="header">
+				<a class="logo" href="index.html"></a>
+				<div class="headerdiv">
+					<div class="navigationbar">
+						<a class="navitems" href="addProducts.html">Add Product</a>
+						<a class="navitems" href="#">Logout</a>
+						<a class="navitems" href="#"><i class="fa fa-shopping-cart icons" aria-hidden="true"></i></a>
+					</div>
+					<div class="search">
+						<div class="search-select">
+							<select class="form-control">
+								<option>Computers</option>
+								<option>Laptops</option>
+								<option>Desktops</option>
+								<option>Mobiles</option>
+								<option>Printers</option>
+								<option>Cameras</option>
+							</select>
+						</div>
+						<div class="search-button">
+							<button type="submit"><i class="fa fa-search"></i></button>
+						</div>
+						<div class="search-field">
+							<input class="form-control" type="text" name="search" autocomplete="off" placeholder="Search for products">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div>
+			<div class="left-div"><img class="product-image" src="images/product.jpg" height="50%" width="100%"/></div>
+			<div class="right-div">
+				<div style="border:navy 1px solid; padding:1em">
+					<div>
+						<span><h2>Checkout</h2></span><br>
+					</div>
+					<form method="POST">
+						<div class="form-item">
+							<label>Quantity:</label>
+							<select name="quantity" class="form-control">
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+							</select><br>
+						</div>
+						<div class="form-item">
+							<input type="submit" value="Add to Cart" class="btn btn-primary btn-search btn-addtocart" />
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="center-div">
+				<div class="details-container"  style="border:navy 1px solid; padding:1em">
+					<span class="product-name" id="span-product-name">
+						Dell Inspiron 5475 23.8" FHD Touch, A10 9700E, 8Gb, 1Tb, RX 560 4Gb, DVD-RW, Wi-Fi, Bluetooth, CAM, Kb + M, Win 10(5475-3495)
+						<hr>Rating: 4
+					</span><hr>
+					<div>
+						<span>Rent: </span>
+						<span>$50</span>
+						<span>per Month</span>
+					</div><hr>
+					<div>
+						<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		<div class="footer">Lease With Ease</div>
+	</body>
+</html>

@@ -1,0 +1,199 @@
+.maindiv {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.mainbody {
+	/*Image taken from https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/EPzzjHhuxijr01n5f/animation-of-modern-touchscreen-laptop-with-smart-phone-and-tablet-pc-hq-video-clip-with-green-screen-and-alpha-matte_eocnhhn_e__F0004.png*/
+	background-image: url("../images/background.jpg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	color: white;
+	width: 100%;
+	height: 80%;
+	overflow: hidden;
+}
+
+.header {
+	width: 100%;
+	/*padding-top:1em;*/
+	text-align: center;
+	font-size: 2em;
+	background-color: #062F4F;
+	height: 20%;
+}
+
+.logo {
+	/*Image taken from http://www.electronicstakeback.com/wp-content/uploads/iStock_000011337080XSmall-225x300.jpg*/
+	background-image: url("../images/logo.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	overflow: hidden;
+	float: left;
+	height: 100%;
+	width: 15%;
+}
+
+.icons {
+	padding-top: 0.2em;
+}
+
+.search {
+	width: 60%;
+	height: 50%;
+}
+
+.search-button button {
+	color: navy;
+	background-color: white;
+}
+
+.search-button button:hover {
+	background: #ccc;
+}
+
+.navigationbar {
+	height: 10%;
+	background: rgba(255, 255, 255, 0);
+	color: white;
+	border: none;
+	width: auto;
+	height: 50%;
+}
+
+.navigationbar button {
+	color: navy;
+	background-color: white;
+}
+
+.navitems {
+	overflow: hidden;
+	text-align: center;
+	padding: 0.2em 0.5em 0em 0.5em;
+	font-size: 1em;
+	box-sizing: border-box;
+	display: block;
+	float: right;
+}
+
+.navitems:hover {
+	border-style: ridge;
+}
+
+.footer {
+	font-size: 1.5em;
+	text-align: center;
+	position: absolute;
+	color: navy;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #062F4F;
+	color: white;
+}
+
+.headerdiv {
+	height: 100%;
+}
+
+.search-select {
+	width: 30%;
+	float: left;
+}
+
+.search-field {
+	width: 40%;
+	float: right;
+}
+
+.search-button {
+	float: right;
+}
+
+.number {
+	width: 3em;
+}
+
+.form-group {
+	width: 100%;
+	height: 2em;
+	margin: 2em;
+}
+
+.label {
+	width: 50%;
+}
+
+.producttab {
+	overflow: hidden;
+	text-align: center;
+	padding: 0.5em 0.5em 0em 0.5em;
+	font-size: 1em;
+	box-sizing: border-box;
+	display: block;
+	float: right;
+	background-color: #062F4F;
+	background: transparent;
+	border: none;
+	color: #007bff;
+	width: 10%;
+	padding-top: 0.2em;
+}
+
+.left-div {
+	float: left;
+	width: 30%;
+	box-sizing: border-box;
+	padding: 1%;
+	text-align: justify;
+}
+
+.right-div {
+	float: right;
+	width: 30%;
+	box-sizing: border-box;
+	padding: 1%;
+	text-align: justify;
+}
+
+.center-div {
+	float: right;
+	width: 40%;
+	box-sizing: border-box;
+	padding: 1%;
+	text-align: justify;
+}
+
+.form-div {
+	float: right;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 2% 30% 2% 30%;
+	text-align: justify;
+}
+
+.uploadimagebutton {
+	border: none;
+	width: 50%;
+	display: block;
+	padding: 1%;
+	font-size: 1rem;
+	color: #495057;
+	background-color: #fff;
+	background-clip: padding-box;
+}
+
+.product-image {
+	overflow: hidden;
+	display: block;
+	max-height: 50%;
+	max-width: 100%;
+	min-width: 100%;
+	height: auto;
+	width: auto;
+	object-fit: contain;
+}
+
+.field {
+	width: 50%
+}

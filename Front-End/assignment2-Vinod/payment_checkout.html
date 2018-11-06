@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lease with ease-Payment</title>
+    <meta name="viewport" content="width=device-width">
+    <!--Source for below library http://blog.getbootstrap.com/2015/06/15/bootstrap-3-3-5-released/ -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css"> <!--style sheet -->
+    <script type="application/javascript" src="js/script.js"></script> <!--javascript file -->
+
+</head>
+<body>
+<div class="container payment-container">
+
+    <div class="container payment-form">
+        <div class="row">
+            <div class="col logo-pdts"> <!-- application logo as a button, while on press to be directed to home-->
+                <button class="btn btn-default" onclick="tohome('payment')"> <!-- if paymnet page then should confirm on leaving the page-->
+                    <img src="images/logo3.jpg" style="width: 100%;object-fit: contain">
+                </button>
+            </div>
+            <div class="col">
+                <div class="row user-prof"> <!--Signout and cart links -->
+                    <!--<a href="cart.jsp" class="btn btn-info btn-lg"><span class="glyphicon glyphicon-shopping-cart"></span></a> &nbsp &nbsp;-->
+                    <!--<a href="register.jsp"><span class="glyphicon glyphicon-user"></span>&nbspSign out</a>-->
+                    <a onclick="alert('Not yet implemented')" class="btn btn-info btn-lg"><span class="glyphicon glyphicon-shopping-cart"></span></a> &nbsp &nbsp;
+                    <a onclick="alert('Not yet implemented')"><span class="glyphicon glyphicon-user"></span>&nbspSign out</a>
+                </div>
+
+
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-md-7   col-md-offset-2">
+                <div class="panel panel-default">
+                    <div class="panel-heading"><h3 class="text-center">Payment Details</h3></div>
+                </div>
+                <div class = "message"></div>
+                <div class="panel-body"> <!--payment form-->
+                    <form name="pay-form" role="form" onsubmit="return form_validation()" method="post" >
+                        <div class="row name-error">
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-3">
+                                <div class="form-group">
+                                    <label>Name on Card</label>
+                                </div>
+                            </div>
+                            <div class="col-xs-9">
+                                <div class="form-group">
+                                    <input  type="text" class="form-control" name="name-on-card" required/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row bill-addr-error">
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-3">
+                                <div class="form-group">
+                                    <label>Billing Address</label>
+                                </div>
+                            </div>
+                            <div class="col-xs-9">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="bill-address" required placeholder="### example street"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row card-no-error">
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-3">
+                                <div class="form-group">
+                                    <label>Card Number</label>
+                                </div>
+                            </div>
+                            <div class="col-xs-9">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="card-no" required placeholder="Enter your 16 digit card number"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row cvv-cd-error">
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-3">
+                                <div class="form-group">
+                                    <label>CVV Code</label>
+                                </div>
+                            </div>
+                            <div class="col-xs-3">
+                                <div class="form-group cvv-cd">
+                                    <input type="text" class="form-control" name="cvv-code" required />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row exp-dt-error">
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-3">
+                                <div class="form-group">
+                                    <label>Expiry Date</label>
+                                </div>
+                            </div>
+                            <div class="col-xs-3">
+                                <div class="form-group exp-dt">
+                                    <input type="text" class="form-control" placeholder="MM/DD" name="expiry-date" required/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-3 col-xs-offset-3 pay-btn">
+                                <button class="btn btn-primary btn-lg btn-block" type="submit">Pay</button>
+                            </div>
+                            <div class="col-xs-4 cancel-btn">
+                                <button class="btn btn-primary btn-lg btn-block">Cancel</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!--JQuery JavaScript libraries -->
+<!--Source for Jquery library https://developers.google.com/speed/libraries/-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<!-- source for javascript library http://blog.getbootstrap.com/2015/06/15/bootstrap-3-3-5-released/-->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+
+</body>
+</html>
+

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lease With Ease</title>
+
+	<!-- Generated using: Favicon: https://favicon.io/favicon-generator/ -->
+	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+	<!-- External CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" th:href="@{/css/fonts.css}">
+	<link rel="stylesheet" th:href="@{/css/global.css}">
+	<link rel="stylesheet" th:href="@{/css/footer.css}">
+	<link rel="stylesheet" th:href="@{/css/homepage.css}">
+	<link rel="stylesheet" th:href="@{css/main.css}">
+	<link rel="stylesheet" th:href="@{css/register.css}">
+
+	<!-- External JS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<!-- Custom JS -->
+	<script src="/js/ajax.js"></script>
+	<script src="/js/globalfunctions.js"></script>
+	<script src="/js/product.js"></script>
+</head>
+
+<body>
+	<!-- Header -->
+	<div class="topnavigation">
+		<div class="topleftnavigation">
+			<span class="active">
+				<a href="./index.html">LeaseWithEase</a>
+			</span>
+		</div>
+		<div class="topcentrenavigation">
+			<div class="input-group homepageinput-grp">
+				<div class="input-group-btn">
+					<button class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Category
+						<span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu">
+						<li>
+							<a href="renterProductsList.html?Category_Id=1">Cameras</a>
+						</li>
+						<li>
+							<a href="renterProductsList.html?Category_Id=2">Cell Phones</a>
+						</li>
+						<li>
+							<a href="renterProductsList.html?Category_Id=3">Desktops</a>
+						</li>
+						<li>
+							<a href="renterProductsList.html?Category_Id=4">Headphones</a>
+						</li>
+						<li>
+							<a href="renterProductsList.html?Category_Id=5">Laptops</a>
+						</li>
+						<li>
+							<a href="renterProductsList.html?Category_Id=6">Printers</a>
+						</li>
+						<li>
+							<a href="renterProductsList.html?Category_Id=7">Speakers</a>
+						</li>
+					</ul>
+				</div>
+				<input id="searchText" type="text" class="form-control" aria-label="abc">
+				<div class="input-group-btn">
+					<button id="searchButton" class="btn btn-default" type="submit" onclick="onSearchClick()">
+						<i class="glyphicon glyphicon-search"></i>
+					</button>
+				</div>
+			</div>
+		</div>
+		<div class="toprightnavigation" id="toprightnavigation">
+			<script>renderMenuItems(true);</script>
+		</div>
+	</div>
+
+	<!-- Form -->
+	<div class="content-body">
+		<div class="content-left"></div>
+		<div class="content-center">
+			<div class="register-box addProduct">
+				<div class="register-header">
+					<span>Add Product</span>
+					<div class="register-box-border"></div>
+				</div>
+				<form method="POST" id="addProductForm">
+					<span class="error" id="productErrorMessage" onclick="onErrorMessageClick()">Error occured while adding product.</span>
+					<div class="form-item">
+						<label>Product Id:*</label>
+						<input class="form-control" type="text" name="productId" autocomplete="off" pattern="[A-z]+[0-9]+" required/>
+					</div>
+					<div class="form-item">
+						<label>Product Name:*</label>
+						<input class="form-control" type="text" name="productName" autocomplete="off" pattern="[a-zA-Z0-9\s-]+"
+						    required/>
+					</div>
+					<div class="form-item">
+						<label>Product Category:*</label>
+						<select class="form-control" name="categoryId" required>
+							<option disabled value="" selected hidden>Select Category</option>
+							<option value=1>Camera</option>
+							<option value=2>Cell Phone</option>
+							<option value=3>Desktop</option>
+							<option value=4>Headphone</option>
+							<option value=5>Laptop</option>
+							<option value=6>Printer</option>
+							<option value=7>Speaker</option>
+							<option value=8>Other</option>
+						</select>
+					</div>
+					<div class="form-item">
+						<label>Product Description:*</label>
+						<input type="text" class="form-control" name="description" required/>
+					</div>
+					<div class="form-item">
+						<label>Rent Deposit per product:*</label>
+						<input class="form-control" type="number" name="rent" placeholder="$" required/>
+					</div>
+					<div class="form-item">
+						<label>Quantity:*</label>
+						<input class="form-control" type="number" name="quantity" required/>
+					</div>
+					<div class="form-item">
+						<label>Add Images:*</label>
+						<input type="file" name="productImage" accept=".png,.jpg,.jpeg" required/>
+					</div>
+					<div class="form-item">
+						<button class="btn btn-primary btn-search btn-product" name="addProductButton" onclick="onAddProductButtonClick()">Add Product</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="content-right"></div>
+	</div>
+	<!-- Footer -->
+	<footer class="footer">
+		<div class="copyright">
+			<div>&copy; 2018 - Web Development | Group 3</div>
+		</div>
+	</footer>
+</body>
+
+</html>

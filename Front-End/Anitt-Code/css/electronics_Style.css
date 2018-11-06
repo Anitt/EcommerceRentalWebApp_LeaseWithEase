@@ -1,0 +1,179 @@
+header{
+	background-color:#123673;
+}
+.LoginSection a {
+    font-size: 20px;
+    padding: 0.5em;
+    color: #fff;
+}
+.search_logo img {
+    width: 25px;
+    height: 25px;
+}
+.search_logo {
+    display: inline;
+    margin-left: -30px;
+}
+.Categories {
+    display: inline;
+}
+header .row {
+    margin: 0;
+}
+.LoginSection {
+    margin-top: 1em;
+}
+.BannerImage img {
+    width: 100%;
+}
+.MainProducts{
+	margin-top:1em;
+}
+li {
+    list-style-type: none;
+}
+fieldset.createAccount {
+    margin: 0 auto;
+    width: 90%;
+}
+label.mandatory {
+    min-width: 200px;
+    margin-bottom: 1.5em;
+}
+footer {
+    padding: 5em;
+	background-color:#123673;	
+	margin-top:2em;
+ }
+ .CopyRight {
+    text-align: center;
+	color:#fff;
+}
+.mini-cart-details {
+    background: #fff;
+    padding: 10px;
+}
+.mini-cart {
+    margin-top: 15px;
+}
+.mini-cart-details {
+    display: none;
+}
+.mini-cart-logo{
+	    background-image: url(https://web.cs.dal.ca/~rajendran/csci5709/a2/images/sprite.png);
+    height: 100%;
+    width: 27px;
+    background-position: center 2px;
+	    display: inline-block;
+
+	    cursor: pointer;
+
+}
+.header.row {
+    margin: 0;
+}
+.product-main {
+    border: 1px solid #000;
+}
+.Top-Seller-products {
+    text-align: center;
+    margin-bottom: 1em;
+    font-size: 2em;
+    font-weight: bold;
+}
+.search_bar {
+    margin-top: 15px;
+}
+.Categories a {
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+	    padding-bottom: 1em;
+
+    color: #fff;
+    float: right;
+    margin-right: 5em;}
+.Filters-section {
+    border: 1px solid;
+    padding: 1em;
+    background-color: #e4e4e4;
+}
+span.yellow {
+    color: yellow;
+    font-size: 2.5em;
+}
+span.no-rating {
+    font-size: 2.5em;
+}
+.product-inner {
+    border: 2px solid;
+    margin-left: 10px;
+    padding: 1em;
+}
+.Content.row {
+    margin: 0;
+	    margin-top: 5em;
+
+}
+.threeProductsSection{
+	
+	margin-top:2em;
+}
+.MainProducts img {
+    width: 100%;
+}
+.threeProductsSection img {
+    width: 100%;
+}
+.LoginSection a:hover, .Categories a:hover {
+    color: #fff;
+}
+.Product1.product-main {
+    padding-bottom: 4em;
+}
+.Product3.product-main {
+    margin-top: 1.5em;
+}
+.BuyNow {
+    border: 1px solid #000;
+    padding: 6px 9px;
+   
+    background: #000;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+}
+.ProductsElectronics img {
+    width: 100%;
+}
+.product-actual-price {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+.product-main{
+}
+.product1-text, .product2-text, .product3-text {
+    text-align: center;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+}
+.productblockInner{
+	border: 2px solid #000;
+	margin-left:1.2em;
+}
+.product-details{
+	padding:2em;
+}
+.product-name {
+    text-align: center;
+}
+.product-name {
+    text-align: center;
+    font-weight: bold;
+    font-size: 17px;
+}

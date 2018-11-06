@@ -1,0 +1,133 @@
+.content-body {
+	/* Source: http://wallpaperswide.com/laptop_4-wallpapers.html */
+	background: url("../images/computers.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.content-right,
+.content-center {
+	width: 20%;
+}
+
+.content-left {
+	width: 60%;
+	height: 100%;
+}
+
+.login-box {
+	font-family: 'PlayfairDisplay';
+	height: 40%;
+	width: 60%;
+	border: #F5F5F5 solid 1px;
+	background-color: #F5F5F5;
+	border-radius: 25px;
+	min-height: 290px;
+	min-width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 8em;
+}
+
+.login-header span {
+	display: block;
+	font-size: 2em;
+	text-align: center;
+}
+
+.login-box-border {
+	border-bottom: 2px solid #18121E;
+	width: 70%;
+	margin: auto;
+}
+
+.form-item {
+	height: 3em;
+	padding-top: 2em;
+}
+
+.form-item label {
+	margin-left: 3em;
+}
+
+.form-item input {
+	display: block;
+	width: 50%;
+	float: right;
+	margin-right: 3em;
+}
+
+.form-item .btn-reset {
+	float: left;
+	margin-left: 3em;
+	width: 35%;
+	margin-top: 2em;
+}
+
+.form-item .btn-submit {
+	float: right;
+	margin-right: 3em;
+	width: 35%;
+	margin-top: 2em;
+}
+
+/**
+ * Responsive design
+ */
+
+@media only screen and (max-width: 768px) {
+	.content-right {
+		display: none;
+	}
+
+	.content-center {
+		display: none;
+	}
+
+	.content-left {
+		float: none;
+		width: 100%;
+		height: auto;
+	}
+}
+
+@media only screen and (max-width: 320px) {
+	.content-right {
+		display: none;
+	}
+
+	.content-center {
+		display: none;
+	}
+
+	.content-left {
+		float: none;
+		width: 100%;
+		height: auto;
+	}
+
+	.login-box {
+		width: 90%;
+		min-width: auto;
+		margin-top: 3em;
+		min-height: 380px;
+	}
+
+	.form-item {
+		height: 5em;
+	}
+
+	.form-item input {
+		width: auto;
+		float: none;
+		margin-right: 3em;
+		margin-left: 3em;
+	}
+
+	.btn-submit,
+	.btn-reset {
+		float: none !important;
+		width: 70% !important;
+		margin-top: .75em !important;
+	}
+}

@@ -1,0 +1,48 @@
+html,
+body {
+	font-family: Raleway, sans-serif;
+	background-color: #fff;
+}
+
+footer {
+	width: 100%;
+	display: inline-block;
+	margin: 0;
+	height: 8vh;
+	background-color: #123673;
+	position: absolute;
+	bottom: 0;
+}
+
+footer .copyright {
+	width: 50%;
+	float: left;
+	height: inherit;
+}
+
+footer .copyright div{
+	padding-left: 10%;
+	color: white;
+	line-height: 70px;
+	text-transform: capitalize;
+	letter-spacing: 1px;
+	height: inherit;
+}
+
+footer div {
+	margin: auto 10px;
+}
+
+footer div div {
+	margin: 0;
+}
+
+@media (max-width: 600px) {
+	footer .copyright {
+		width: 100%;
+	}
+	footer .copyright div {
+		text-align: center;
+		padding: 0;
+	}
+}

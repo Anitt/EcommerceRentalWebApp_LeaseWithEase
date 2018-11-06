@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lease with ease</title>
+    <meta name="viewport" content="width=device-width">
+    <!--Source for below library http://blog.getbootstrap.com/2015/06/15/bootstrap-3-3-5-released/ -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!--source of below library https://cdnjs.com/libraries/font-awesome >>> library used to provide star rating feature-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- source of below library https://blog.jquery.com/2011/11/21/jquery-1-7-1-released/-->
+    <script type="text/javascript" src="jquery/http_code.jquery.com_jquery-1.7.1.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/prodliststyles.css"> <!--style sheet -->
+    <script type="application/javascript" src="js/prodlistscript.js"></script> <!--javascript file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/homepagecarousel.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="fonts/fonts.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/homepage.css">
+    <link rel="stylesheet" href="css/homepagedropdown.css">
+    <link rel="stylesheet" href="css/electronicitemshomepage.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+<div class="topnavigation">
+    <div class="topleftnavigation">
+
+        <span class="active" href="#home"> <a href="./index.html">LeaseWithEase</a></span>
+    </div>
+
+    <div class="topcentrenavigation">
+        <div class="input-group homepageinput-grp">
+            <div class="input-group-btn">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Category<span class="caret"></span></button>
+                <ul class="dropdown-menu" role="menu">
+                    <li>
+                        <a href="#">Headphones</a>
+                    </li>
+                    <li>
+                        <a href="#">Harddisks</a>
+                    </li>
+                    <li>
+                        <a href="#">Laptops</a>
+                    </li>
+                    <li>
+                        <a href="#">Desktops</a>
+                    </li>
+                </ul>
+            </div>
+            <input type="text" class="form-control" aria-label="abc">
+            <div class="input-group-btn">
+                <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="toprightnavigation">
+        <a href="./profile.html"><span><span class="glyphicon glyphicon-user"></span>Profile</span></a>
+        <a href="./cart.html"><span><span class="glyphicon glyphicon-shopping-cart"></span>Cart</span></a>
+        <a href="#"><span href="#contact">Logout</span></a>
+    </div>
+
+</div>
+
+        <div class="row"> <!-- option to filter the products that are displyed by checking on the necessary category and brands-->
+            <div class="col-sm-2">
+
+                    <div class="Filter-Criteria">
+                        <div class="name-criteria">Brand</div>
+                        <div class="filters">
+                            <ul>
+                                <li>
+                                    <input type="checkbox"/>
+                                    <label>SkullCandy</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox"/>
+                                    <label>Samsung</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox"/>
+                                    <label>Boss</label>
+                                </li>
+
+                            </ul>
+                        </div>
+
+
+                        <div class="name-criteria">Price</div>
+                        <div class="filters">
+                            <ul>
+                                <li>
+                                    <input type="checkbox"/>
+                                    <label>Below 50$</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox"/>
+                                    <label>50$-100$</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox"/>
+                                    <label>Above 100$</label>
+                                </li>
+
+                            </ul>
+                        </div>
+
+
+
+                    </div>
+
+
+            </div>
+            <!-- product list portion, products list are dynamically generated through script-->
+            <div class="col-sm-10 list-divider" >
+                <div class="container products" >
+                </div>
+            </div>
+        </div>
+
+    <!--footer portion-->
+<footer>
+  <span class="copyright">
+    <p>&copy 2018 - Web Development | Group 3</p>
+  </span>
+
+</footer>
+
+<script>
+    display_products();
+    $(".dropdown-menu").on('click','li a',function()
+    {
+        $(this).parent().parent().siblings(".btn:first-child").html($(this).text());
+        $(this).parent().parent().siblings(".btn:first-child").val($(this).text());
+
+    });
+</script>
+
+<!--JQuery JavaScript libraries -->
+<!--Source for Jquery library https://developers.google.com/speed/libraries/-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<!-- source for javascript library http://blog.getbootstrap.com/2015/06/15/bootstrap-3-3-5-released/-->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+

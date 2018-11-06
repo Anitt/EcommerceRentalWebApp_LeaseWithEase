@@ -1,0 +1,38 @@
+.container.carousel-parentcontainer{
+	padding:0px;
+	margin:0px;	
+	width:auto;
+}
+
+
+.item, .item.active{
+/* 	height:200px;
+ */	height: calc(100vh - 78px);
+	 transform: translate3d(0,0,0);
+}
+
+.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img{
+    width: auto;
+    height: -webkit-fill-available;
+    align-items: center;
+    margin: auto;
+}
+
+.divcarouselimg1{
+    background: #161617;	
+}
+.divcarouselimg2{
+     background: #2f1f13;	
+}
+.divcarouselimg4{
+    background: #e2e9e1;	
+}
+.divcarouselimg6{
+     background: #d49d00;	
+}
+
+
+.carouselhomepagecaption h3,
+.carouselhomepagecaption p {
+    text-align: left;
+}

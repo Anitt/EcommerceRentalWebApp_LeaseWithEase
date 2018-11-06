@@ -1,0 +1,155 @@
+.header {
+    font-weight: 400;
+	font-size: 1.5em;
+}
+
+a{
+	color: white;
+	text-decoration:none;
+}
+/* .topnavigation span a:hover, .topnavigation span a:visited, .topnavigation span a:active , .topnavigation span a:focus  {
+    text-decoration: none;
+	outline: none;
+	color: green;
+} */
+
+/* a:focus, a:hover{
+	 text-decoration: none;
+	outline: none;
+	color: green;
+} */
+.parentdivcart {
+    display: flex;
+    height: 76vh;
+    overflow-y: auto;
+    overflow-x: auto;
+    font-family: "Montserrat", sans-serif;
+}
+.leftdivcart {
+    flex: 1.9;
+   /*  background: red; */
+    border-radius: 10px;
+    /* padding: 10px; */
+    margin-right: 5px;
+}
+.rightdivcart {
+    flex: 0.5;
+    background-color: #d1d7cfd9;
+    border-radius: 4px;
+    border: #bec0bd85 1px solid;
+    padding: 10px;
+    margin: 0.5em;
+    height: fit-content;
+}
+.bodyelement {
+    /* height: 79.5vh; */
+}
+.rightheader{
+    font-size: 1em;
+    font-weight: 500;
+}
+.checkoutbtn {
+    width: 100%;
+    background-color: #444444;
+    border-color: #444444;
+}
+.checkoutbtn:hover {
+    color: #EECA50;
+    background-color:#313030;
+    border-color: #444444;
+}
+
+.valuecartsubtotal{
+	color: #10693B;	
+    font-weight: 600;
+}
+
+tbody, table{
+	width: 100%;
+	/* overflow-x: scroll; */
+	/* overflow-y: scroll; */
+	/* display:flex; */
+}
+tbody tr th {
+    font-size: 0.87em;
+    font-weight: 500;
+    text-align: left;
+}
+tbody tr th,
+tbody tr td{
+	padding: 5px;
+}
+
+tbody tr th:nth-child(1),
+tbody tr td:nth-child(1)
+{
+	width:20%;
+}
+tbody tr th:nth-child(2), tbody tr td:nth-child(2)
+{
+	width:40%;
+    min-width: 200px;	
+}
+tbody tr th:nth-child(3),
+tbody tr td:nth-child(3)
+{
+	width: 12%;
+	min-width: 100px;
+}
+tbody tr th:nth-child(4),
+tbody tr td:nth-child(4)
+{
+	width: 12%;
+	min-width: 100px;
+}
+.cartItemName {
+    font-size: 0.9em;
+    font-weight: 700;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.cartItemAvailability {
+    font-size: 0.75em;
+    margin: 5px 0;
+    color: #10693be0;
+    font-weight: 500;
+    /* display: none; */
+}
+.cartItemShipping {
+    font-size: 0.79em;
+    margin-bottom: 5px;
+    /* display: none; */
+}
+
+.cartDetailsBtn{
+    background: transparent;
+    border: none;
+    padding: 0px;
+    font-size: 0.85em;
+    cursor: pointer;
+    font-weight: 410;
+    font-family: "Montserrat", sans-serif;
+	outline:none;
+}
+
+
+th, td {
+   border-bottom: 0.9px solid #cacfc8;
+}
+
+.header{
+	font-family: "Montserrat", sans-serif;
+	/* margin: 1rem; */
+	text-align: center;
+	vertical-align: middle;
+	height: 7vh;
+	/* margin: 50%; */
+	border-bottom: 1px solid rgba(0, 0, 0, .1);
+	/* top: 50%; */
+}
+
+img.cartelementicon {
+    height: 8em;
+    width: 8em;
+}

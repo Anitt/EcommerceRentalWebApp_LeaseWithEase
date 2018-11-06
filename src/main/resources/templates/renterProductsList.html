@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lease With Ease</title>
+
+	<!-- Generated using: Favicon: https://favicon.io/favicon-generator/ -->
+	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+	<!-- External CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" th:href="@{css/fonts.css}">
+	<link rel="stylesheet" th:href="@{css/global.css}">
+	<link rel="stylesheet" th:href="@{css/homepage.css}">
+	<link rel="stylesheet" th:href="@{css/electronicitemshomepage.css}">
+	<link rel="stylesheet" th:href="@{css/productListing.css}">
+	<link rel="stylesheet" th:href="@{css/footer.css}">
+
+	<!-- External JS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<!-- Custom JS -->
+	<script src="/js/ajax.js"></script>
+	<script src="/js/globalfunctions.js"></script>
+	<script src="js/renterProdListScript.js"></script>
+</head>
+
+<body>
+	<!-- Header -->
+	<div class="topnavigation">
+		<div class="topleftnavigation">
+			<span class="active">
+				<a href="./index.html">LeaseWithEase</a>
+			</span>
+		</div>
+		<div class="topcentrenavigation">
+			<div class="input-group homepageinput-grp">
+				<div class="input-group-btn">
+					<button class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Category
+						<span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu">
+						<li>
+							<a href="renterProductsList.html?Category_Id=1">Cameras</a>
+						</li>
+						<li>
+							<a href="renterProductsList.html?Category_Id=2">Cell Phones</a>
+						</li>
+						<li>
+							<a href="renterProductsList.html?Category_Id=3">Desktops</a>
+						</li>
+						<li>
+							<a href="renterProductsList.html?Category_Id=4">Headphones</a>
+						</li>
+						<li>
+							<a href="renterProductsList.html?Category_Id=5">Laptops</a>
+						</li>
+						<li>
+							<a href="renterProductsList.html?Category_Id=6">Printers</a>
+						</li>
+						<li>
+							<a href="renterProductsList.html?Category_Id=7">Speakers</a>
+						</li>
+					</ul>
+				</div>
+				<input id="searchText" type="text" class="form-control" aria-label="abc">
+				<div class="input-group-btn">
+					<button id="searchButton" class="btn btn-default" type="submit" onclick="onSearchClick()">
+						<i class="glyphicon glyphicon-search"></i>
+					</button>
+				</div>
+			</div>
+		</div>
+		<div class="toprightnavigation" id="toprightnavigation">
+			<script>
+				renderMenuItems(true);
+			</script>
+		</div>
+	</div>
+
+	<div class="container-fluid">
+		<div class="row">
+			<!-- option to filter the products that are displyed by checking on the necessary category and brands-->
+			<div class="col-sm-2">
+				<div class="Filter-Criteria">
+					<div class="name-criteria">Price</div>
+					<div class="filters">
+						<ul>
+							<li>
+								<input id="below50" type="checkbox" />
+								<label>Below 50$</label>
+							</li>
+							<li>
+								<input id="50to100" type="checkbox" />
+								<label>50$-100$</label>
+							</li>
+							<li>
+								<input id="above100" type="checkbox" />
+								<label>Above 100$</label>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- product list portion, products list are dynamically generated through script-->
+			<div class="col-sm-10 list-divider" style="margin-top:50px">
+				<div class="container products">
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!--footer portion-->
+	<footer class="footer">
+		<div class="copyright">
+			<div>&copy; 2018 - Web Development | Group 3</div>
+		</div>
+	</footer>
+</body>
+
+</html>

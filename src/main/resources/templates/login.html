@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lease With Ease</title>
+
+	<!-- Generated using: Favicon: https://favicon.io/favicon-generator/ -->
+	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+	<!-- External CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" th:href="@{/css/fonts.css}">
+	<link rel="stylesheet" th:href="@{/css/global.css}">
+	<link rel="stylesheet" th:href="@{/css/homepage.css}">
+	<link rel="stylesheet" th:href="@{/css/footer.css}">
+	<link rel="stylesheet" th:href="@{/css/login.css}">
+
+	<!-- External JS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+	<!-- Custom JS -->
+	<script src="js/ajax.js"></script>
+	<script src="js/globalfunctions.js"></script>
+	<script src="js/login.js"></script>
+
+</head>
+
+<body>
+	<div class="main">
+		<!-- Header -->
+		<div class="topnavigation">
+			<div class="topleftnavigation">
+				<span class="active">
+					<a href="./index.html">LeaseWithEase</a>
+				</span>
+			</div>
+		</div>
+
+		<!-- Main content -->
+		<div class="content-body">
+			<div class="content-left">
+				<div class="login-box">
+					<div class="login-header">
+						<span>Sign In</span>
+						<div class="login-box-border"></div>
+					</div>
+					<form method="POST" id="login-form">
+						<div class="form-item">
+							<label>Username:</label>
+							<input type="email" id="username" name="username" class="form-control" required/>
+						</div>
+						<div class="form-item">
+							<label>Password:</label>
+							<input type="password" id="password" name="password" class="form-control" pattern="\w{8,}" required/>
+						</div>
+						<div class="form-item">
+							<button class="btn btn-primary btn-search btn-submit">Log in</button>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="content-right"></div>
+			<div class="content-center"></div>
+		</div>
+	</div>
+	<footer>
+		<div class="copyright">
+			<div>&copy; 2018 - Web Development | Group 3</div>
+		</div>
+	</footer>
+</body>
+
+</html>

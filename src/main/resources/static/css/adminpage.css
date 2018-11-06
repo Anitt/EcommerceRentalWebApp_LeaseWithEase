@@ -1,0 +1,71 @@
+html {
+    height: 100vh;
+    display: flex;
+}
+
+body {
+	margin: auto;
+	background-color: lightgray;
+}
+
+.bodyElement {
+    height: calc(100% - 16vh);
+}
+
+.clsErrorMessage {
+    color: red;
+    font-weight: 400;
+    font-size: 1em;
+    text-align: center;
+    display: none;
+    padding: 0em 9em 1.5em 9em;
+}
+
+.formbody {
+    max-width: 70vw;
+    min-width: 670px;
+    width: 40vw;
+    background-color:white;
+    border-radius: 1em;
+    padding: 1.5em 3em 0.5em 3em;
+    margin: auto;
+}
+
+.form-group{
+    width: 70vh;
+    height: 2em;
+    display: inline-flex;
+}
+
+.label{
+    width: 50%;
+    font-size: 1.5em;
+    padding: 0em 15em 1em 0em;
+    color:#1e2833;
+}
+
+.button{
+	min-width:160px;
+    width: 15vw;
+    margin: 1em 2em 1em 13em;
+	background-color: #1e2833;
+	font-weight: bold;
+}
+
+.field{
+    width:50%
+}
+
+.heading{
+    margin: 0;
+	padding: 0.5em 0em 0.5em 0em;
+	font-weight: bold;
+	color: #1e2833
+}
+
+.line{
+	border-width: 1px;
+    border-color: black;
+    width: 100%;
+    margin-top: 0.2em;
+}

@@ -1,0 +1,32 @@
+.number {
+  width: 3em;
+}
+
+.form-group{
+	width: 80%;
+	height: 2em;
+	margin: 1.5em;
+	display: inline-flex;
+}
+
+.label{
+	width: 50%;
+}
+
+.form-div{
+  float: right;
+  width: 80%;
+  box-sizing: border-box;
+  padding: 2% 20% 2% 20%;
+  text-align: justify;
+  height: 82vh;
+  margin: 0% 10% 0% 10%;
+}
+
+.centerbutton{
+	margin: 0% 40%;
+}
+
+.field{
+	width:50%
+}

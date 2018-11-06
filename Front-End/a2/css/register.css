@@ -1,0 +1,67 @@
+.content-left,
+.content-right {
+	width: 20%;
+	height: 100%;
+}
+
+.content-center {
+	width: 60%;
+	height: 100%;
+}
+
+.register-box {
+	font-family: 'PlayfairDisplay';
+	height: 80%;
+	width: 60%;
+	border: #000000 solid 1px;
+	background-color: #F5F5F5;
+	border-radius: 25px;
+	min-height: 290px;
+	min-width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2em;
+}
+
+.register-header span {
+	display: block;
+	font-size: 2em;
+	text-align: center;
+}
+
+.register-box-border {
+	border-bottom: 2px solid #18121E;
+	width: 70%;
+	margin: auto;
+}
+
+.form-item {
+	height: 3em;
+	padding-top: 2em;
+}
+
+.form-item label {
+	margin-left: 3em;
+	margin-top: .35em;
+}
+
+.form-item input {
+	display: block;
+	width: 50%;
+	float: right;
+	margin-right: 3em;
+}
+
+.form-item .btn-reset {
+	float: left;
+	margin-left: 3em;
+	width: 35%;
+	margin-top: 2em;
+}
+
+.form-item .btn-submit {
+	float: right;
+	margin-right: 3em;
+	width: 35%;
+	margin-top: 2em;
+}

@@ -1,0 +1,81 @@
+.second-navbar {
+    overflow: hidden;
+    background-color: #333;
+	 font-family: "Montserrat", sans-serif;
+
+}
+
+.second-navbar a {
+    float: left;
+     font-size: 0.9em;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+.second-navbar {
+    overflow: hidden;
+    background-color: #333;
+    background-color: #fff;
+    color: #212121;
+    width: 100%;
+    background: #fff;
+    z-index: 6;
+	
+     font-weight: 500;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .16);
+}
+.dropdown {
+    float: left;
+    overflow: hidden;
+	
+     position: inherit;
+}
+
+.dropdown .dropbtn {
+    font-size: 0.9em;
+    border: none;
+    outline: none;
+    /* color: white; */
+    margin: 0 2em;
+    padding: 0.6rem;
+    background-color: inherit;
+    font-family: inherit;
+    /* margin: 0; */
+}
+
+.second-navbar a:hover, .dropdown:hover .dropbtn {
+    color: #10693B;
+}
+body{
+	margin:0;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #D1D7CF;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 20;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 1rem;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+     z-index: 20;
+	
+     background: white;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}

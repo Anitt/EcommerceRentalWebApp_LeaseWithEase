@@ -1,0 +1,73 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link type="text/css" rel="stylesheet" href="css/normalize.css" />
+		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+		<link type="text/css" rel="stylesheet" href="css/commonCSS.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	</head>
+	<script>
+	</script>
+
+	<body>
+		<div class="maindiv">
+			<div class="header">
+				<a class="logo" href="index.html"></a>
+				<div class="headerdiv">
+					<div class="navigationbar">
+						<a class="navitems" href="productDetails.html">View Products</a>
+						<a class="navitems" href="#">Logout</a>
+						<a class="navitems" href="#"><i class="fa fa-user icons"></i></a>
+						<a class="navitems" href="#"><i class="fa fa-shopping-cart icons" aria-hidden="true"></i></a>
+					</div>
+					<div class="search">
+						<div class="search-select">
+							<select class="form-control">
+								<option>Computers</option>
+								<option>Laptops</option>
+								<option>Desktops</option>
+								<option>Mobiles</option>
+								<option>Printers</option>
+								<option>Cameras</option>
+							</select>
+						</div>
+						<div class="search-button">
+							<button type="submit"><i class="fa fa-search"></i></button>
+						</div>
+						<div class="search-field">
+							<input class="form-control" type="text" name="search" autocomplete="off" placeholder="Search for products">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="form-div">
+				<form method="POST" class="justify-content-center align-items-center align-content-center m-autoaction">
+					<div class="form-group">
+					<label class="float-left field">Product Name:*</label>
+					<input class="form-control float-right field" type="pname" name="fname" required autocomplete=false pattern="[a-zA-Z0-9\s-]"><br>
+					</div>
+					<div class="form-group">
+					<label class="float-left field">Product Category:*</label>
+						<select class="form-control float-right field">
+								<option>Computer</option>
+								<option>Laptop</option>
+								<option>Desktop</option>
+								<option>Mobile</option>
+								<option>Printer</option>
+								<option>Camera</option>
+								<option>Other</option>
+						</select><br>
+					</div>
+					<div class="form-group"><label class="float-left field">Product Description:*</label><input class="form-control float-right field" type="textarea" name="pdescription" rows="4" cols="50" required pattern="[a-zA-Z0-9\s-]+"><br></div>
+					<div class="form-group"><label class="float-left field">Rent Deposit per product:*</label></span><input class="form-control float-right field" type="number" name="deposit" required><br></div>
+					<div class="form-group"><label class="float-left field">Quantity:*</label><input class="form-control float-right field" type="number" name="quantity" required><br></div>
+					<div class="form-group"><label class="float-left field">Add Images:</label><input type="file" class="uploadimagebutton  float-right  field" text="hi"  name="images" multiple="multiple"><br></div>
+					<div class="form-group"><button class="btn btn-primary btn-lg float-left">Add Product</button></div>
+				</form>
+			</div>
+		</div>
+		<div class="footer">Lease With Ease</div>
+	</body>
+</html>

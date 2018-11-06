@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lease With Ease</title>
+
+	<!-- Generated using: Favicon: https://favicon.io/favicon-generator/ -->
+	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+	<!-- External CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" th:href="@{includes/loadmask/jquery.msg.css}">
+	<link rel="stylesheet" th:href="@{css/fonts.css}">
+	<link rel="stylesheet" th:href="@{css/global.css}">
+	<link rel="stylesheet" th:href="@{css/homepage.css}">
+	<link rel="stylesheet" th:href="@{css/footer.css}">
+	<link rel="stylesheet" th:href="@{css/cart.css}">
+
+	<!-- External JS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://www.paypalobjects.com/api/checkout.js"></script>
+	<script src="includes/loadmask/jquery.center.min.js"></script>
+	<script src="includes/loadmask/jquery.msg.js"></script>
+
+	<!-- Custom JS -->
+	<script src="js/globalfunctions.js"></script>
+	<script src="js/ajax.js"></script>
+	<script src="js/cart.js"></script>
+</head>
+
+<body>
+	<div class="topnavigation">
+		<div class="topleftnavigation">
+			<span class="active">
+				<a href="./index.html">LeaseWithEase</a>
+			</span>
+		</div>
+		<div class="topcentrenavigation">
+			<div class="input-group homepageinput-grp">
+				<div class="input-group-btn">
+					<button class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Category
+						<span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu">
+						<li>
+							<a href="renteeProductsList.html?Category_Id=1">Cameras</a>
+						</li>
+						<li>
+							<a href="renteeProductsList.html?Category_Id=2">Cell Phones</a>
+						</li>
+						<li>
+							<a href="renteeProductsList.html?Category_Id=3">Desktops</a>
+						</li>
+						<li>
+							<a href="renteeProductsList.html?Category_Id=4">Headphones</a>
+						</li>
+						<li>
+							<a href="renteeProductsList.html?Category_Id=5">Laptops</a>
+						</li>
+						<li>
+							<a href="renteeProductsList.html?Category_Id=6">Printers</a>
+						</li>
+						<li>
+							<a href="renteeProductsList.html?Category_Id=7">Speakers</a>
+						</li>
+					</ul>
+				</div>
+				<input id="searchText" type="text" class="form-control" aria-label="abc">
+				<div class="input-group-btn">
+					<button id="searchButton" class="btn btn-default" type="submit" onclick="onSearchClick()">
+						<i class="glyphicon glyphicon-search"></i>
+					</button>
+				</div>
+			</div>
+		</div>
+		<div class="toprightnavigation" id="toprightnavigation">
+			<script>
+				renderMenuItems(false);
+			</script>
+		</div>
+	</div>
+	<div class="bodyelement">
+		<div class="header">Shopping Cart</div>
+		<div class="parentdivcart">
+			<div class="leftdivcart">
+				<div class="cartelement">
+					<table>
+						<!--Heading Row-->
+						<tr>
+							<th class="cartheadingImage"></th>
+							<th class="cartheadingDetails">Details</th>
+							<th class="cartheadingPrice">Price</th>
+							<th class="cartheadingQuant">Quantity</th>
+							<th class="cartheadingDays">Days</th>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div class="rightdivcart">
+				<div class="rightheader">
+					<span class="labelcartsubtotal">Subtotal
+						<span name="itemcount">(0 item)</span>:</span>
+					<span class="valuecartsubtotal" name="subtotal">$0.0</value>
+				</div>
+				<hr>
+				<a href="payment_checkout.html">
+					<!--<button class="checkoutbtn button" type="submit" id="paypal-button">Proceed to checkout</button>-->
+
+					<div id="paypal-button"></div>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<div class="copyright">
+			<div>&copy; 2018 - Web Development | Group 3</div>
+		</div>
+	</footer>
+</body>
+
+</html>

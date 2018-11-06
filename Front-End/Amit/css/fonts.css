@@ -1,0 +1,33 @@
+/**
+ * Name: PlayfairDisplay
+ * Source: https://github.com/clauseggers/Playfair-Display
+ */
+@font-face {
+	font-family: PlayfairDisplay;
+	src: url("../fonts/PlayfairDisplay-Regular.ttf");
+}
+
+@font-face {
+	font-family: PlayfairDisplay-Black;
+	src: url("../fonts/PlayfairDisplay-Black.ttf");
+}
+
+@font-face {
+	font-family: PlayfairDisplay-BlackItalic;
+	src: url("../fonts/PlayfairDisplay-BlackItalic.ttf");
+}
+
+@font-face {
+	font-family: PlayfairDisplay-Bold;
+	src: url("../fonts/PlayfairDisplay-Bold.ttf");
+}
+
+@font-face {
+	font-family: PlayfairDisplay-BoldItalic;
+	src: url("../fonts/PlayfairDisplay-BoldItalic.ttf");
+}
+
+@font-face {
+	font-family: PlayfairDisplay-Italic;
+	src: url("../fonts/PlayfairDisplay-Italic.ttf");
+}

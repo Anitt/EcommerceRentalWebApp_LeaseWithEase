@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Lease With Ease</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--
+		Generated using: Favicon: https://favicon.io/favicon-generator/
+	-->
+	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+	<!--
+		normalize.css
+		Author: Nicolas Gallagher
+		Source: https://necolas.github.io/normalize.css/
+	-->
+	<link rel="stylesheet" type="text/css" media="screen" href="css/normalize.css" />
+	<!--
+		bootstrap.min.css
+		Source: https://getbootstrap.com/docs/4.0/getting-started/download/
+	-->
+	<link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="css/register.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="css/register-rentee.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="css/fonts.css" />
+
+	<!--Source for below library http://blog.getbootstrap.com/2015/06/15/bootstrap-3-3-5-released/ -->
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="fonts/fonts.css">
+	<link rel="stylesheet" href="css/global.css">
+	<link rel="stylesheet" href="css/homepage.css">
+	<link rel="stylesheet" href="css/homepagedropdown.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css"> <!--style sheet -->
+	<script type="application/javascript" src="js/script.js"></script> <!--javascript file -->
+
+	<!--JQuery JavaScript libraries -->
+	<!--Source for Jquery library https://developers.google.com/speed/libraries/-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<!-- source for javascript library http://blog.getbootstrap.com/2015/06/15/bootstrap-3-3-5-released/-->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="main">
+		<!-- Header -->
+		<div class="topnavigation">
+			<div class="topleftnavigation">
+				<span class="active" href="#home"><a href="./index.html">LeaseWithEase</a></span>
+			</div>
+			<div class="topcentrenavigation">
+				<div class="input-group homepageinput-grp">
+					<div class="input-group-btn">
+						<button class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Category<span class="caret"></span></button>
+						<ul class="dropdown-menu">
+							<li><a href="#">Headphones</a></li>
+							<li><a href="#">Harddisks</a></li>
+							<li><a href="#">Laptops</a></li>
+							<li><a href="#">Desktops</a></li>
+						</ul>
+					</div>
+					<input type="text" class="form-control" aria-label="abc">
+					<div class="input-group-btn">
+						<button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+					</div>
+				</div>
+				<!-- </form> -->
+				<!-- </span> -->
+			</div>
+	
+			<div class="toprightnavigation">
+				<!-- <a href="./profile.html"><span><span class="glyphicon glyphicon-user"></span>Profile</span></a> -->
+				<a href="./cart.html"><span><span class="glyphicon glyphicon-shopping-cart"></span>Cart</span></a>
+				<!-- <a href="#"><span href="#contact">Logout</span></a> -->
+			</div>
+		</div>
+
+		<!-- Main content -->
+		<div class="content-body">
+			<div class="content-left"></div>
+			<div class="content-right"></div>
+			<div class="content-center">
+				<div class="register-box">
+					<div class="register-header">
+						<span>Register</span>
+						<div class="register-box-border"></div>
+					</div>
+					<form method="POST">
+						<div class="form-item">
+							<label>First name:</label>
+							<input type="text" name="fname" class="form-control" required/>
+						</div>
+						<div class="form-item">
+							<label>Last name:</label>
+							<input type="text" name="lname" class="form-control" required/>
+						</div>
+						<div class="form-item">
+							<label>Email:</label>
+							<input type="email" name="email" class="form-control" required/>
+						</div>
+						<div class="form-item">
+							<label>Phone:</label>
+							<input type="number" name="phone" class="form-control" required/>
+						</div>
+						<div class="form-item">
+							<label>Password:</label>
+							<input type="password" name="password" class="form-control" required/>
+						</div>
+						<div class="form-item">
+							<label>Confirm password:</label>
+							<input type="password" class="form-control" required/>
+						</div>
+						<div class="form-item">
+							<label>Street Address:</label>
+							<input type="password" class="form-control" required/>
+						</div>
+						<div class="form-item">
+							<input type="reset" value="Reset" class="btn btn-primary btn-search btn-reset" />
+							<input type="submit" value="Submit" class="btn btn-primary btn-search btn-submit" />
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<span class="copyright">
+			<p>&copy 2018 - Web Development | Group 3</p>
+		</span>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,10 @@
+Client Id: AcPWaLYNTsqEuSBnomAkFD0ELV9KBZDsXjkHV_h1vwoGthhyArGJuCCQxBwfmY7OP5Lig2RH0nt284KG
+Secret Key EGYBn5hKtRyv8gpYpvnzmW4HO9QOjglss2mA2WfufgrdFArxTdqqD3tVCfCPnTDosbUFzZSqcjJvYvW1
+
+Buyer sandbox account:
+Username: amit.prajapati027-buyer@gmail.com
+Password: leasewitheasebuyer
+
+Seller sandbox Account:
+Username: amit.prajapati027-facilitator@gmail.com
+Password: leasewitheaseseller

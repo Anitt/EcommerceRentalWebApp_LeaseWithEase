@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lease With Ease</title>
+
+	<!-- Generated using: Favicon: https://favicon.io/favicon-generator/ -->
+	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+	<!-- External CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" th:href="@{css/main.css}">
+	<link rel="stylesheet" th:href="@{css/productdetails.css}">
+	<link rel="stylesheet" th:href="@{css/fonts.css}">
+	<link rel="stylesheet" th:href="@{css/global.css}">
+	<link rel="stylesheet" th:href="@{css/homepage.css}">
+	<link rel="stylesheet" th:href="@{css/footer.css}">
+	<link rel="stylesheet" th:href="@{css/style.css}">
+
+	<!-- External JS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<!-- Custom JS -->
+	<script src="js/script.js"></script>
+	<script src="js/ajax.js"></script>
+	<script src="js/productDetails.js"></script>
+	<script src="js/globalfunctions.js"></script>
+</head>
+
+<body>
+	<div class="main">
+		<!-- Header -->
+		<div class="topnavigation">
+			<div class="topleftnavigation">
+				<span class="active">
+					<a href="./index.html">LeaseWithEase</a>
+				</span>
+			</div>
+			<div class="topcentrenavigation">
+				<div class="input-group homepageinput-grp">
+					<div class="input-group-btn">
+						<button class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Category
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu">
+							<li>
+								<a href="renteeProductsList.html?Category_Id=1">Cameras</a>
+							</li>
+							<li>
+								<a href="renteeProductsList.html?Category_Id=2">Cell Phones</a>
+							</li>
+							<li>
+								<a href="renteeProductsList.html?Category_Id=3">Desktops</a>
+							</li>
+							<li>
+								<a href="renteeProductsList.html?Category_Id=4">Headphones</a>
+							</li>
+							<li>
+								<a href="renteeProductsList.html?Category_Id=5">Laptops</a>
+							</li>
+							<li>
+								<a href="renteeProductsList.html?Category_Id=6">Printers</a>
+							</li>
+							<li>
+								<a href="renteeProductsList.html?Category_Id=7">Speakers</a>
+							</li>
+						</ul>
+					</div>
+					<input id="searchText" type="text" class="form-control" aria-label="abc">
+					<div class="input-group-btn">
+						<button id="searchButton" class="btn btn-default" type="submit" onclick="onSearchClick()">
+							<i class="glyphicon glyphicon-search"></i>
+						</button>
+					</div>
+				</div>
+				<!-- </form> -->
+				<!-- </span> -->
+			</div>
+
+			<div class="toprightnavigation" id="toprightnavigation">
+				<script>renderMenuItems(false);</script>
+			</div>
+		</div>
+
+		<!-- Main Content -->
+		<div class="content-body">
+			<div class="content-left">
+				<!-- <div class="content-separator"></div> -->
+			</div>
+			<div class="content-center">
+
+			</div>
+			<div class="content-right">
+				<div class="checkout-box">
+					<div class="checkout-header">
+						<span>Checkout</span>
+						<div class="checkout-box-border"></div>
+					</div>
+					<div class="form-item">
+						<label>Quantity:</label>
+						<input type="number" name="quantity" min="1" max="5" value="2" onkeydown="return false">
+
+					</div>
+					<div class="form-item">
+						<input type="button" value="Add to Cart" class="btn btn-primary btn-search btn-addtocart" onclick="onAddToCart();" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="footer">
+		<div class="copyright">
+			<div>&copy; 2018 - Web Development | Group 3</div>
+		</div>
+	</footer>
+</body>
+
+</html>

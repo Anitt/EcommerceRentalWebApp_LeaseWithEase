@@ -1,0 +1,96 @@
+.maindiv {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.mainbody {
+	color: white;
+	width: 100%;
+	height: 80%;
+	overflow: hidden;
+}
+
+.number {
+	width: 3em;
+}
+
+.form-group {
+	width: 100%;
+	height: 2em;
+	margin: 1.5em;
+	display: inline-flex;
+}
+
+.label {
+	width: 50%;
+}
+
+.producttab {
+	overflow: hidden;
+	text-align: center;
+	padding: 0.5em 0.5em 0em 0.5em;
+	font-size: 1em;
+	box-sizing: border-box;
+	display: block;
+	float: right;
+	background-color: #062F4F;
+	background: transparent;
+	border: none;
+	color: #007bff;
+	width: 10%;
+	padding-top: 0.2em;
+}
+
+.left-div {
+	float: left;
+	width: 30%;
+	box-sizing: border-box;
+	padding: 1%;
+	text-align: justify;
+}
+
+.right-div {
+	float: right;
+	width: 30%;
+	box-sizing: border-box;
+	padding: 1%;
+	text-align: justify;
+}
+
+.center-div {
+	float: right;
+	width: 40%;
+	box-sizing: border-box;
+	padding: 1%;
+	text-align: justify;
+}
+
+.form-div {
+	float: right;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 2% 30% 2% 30%;
+	text-align: justify;
+	height: 82vh;
+}
+
+.uploadimagebutton {
+	border: none;
+	width: 50%;
+	display: block;
+	padding: 1%;
+	font-size: 1rem;
+	color: black;
+	background-clip: padding-box;
+}
+
+.field {
+	width: 50%
+}
+
+.button {
+	margin: 0em 5em 0em 15em;
+	width: 15vw;
+	font-weight: bold;
+	background-color:#123673;
+}

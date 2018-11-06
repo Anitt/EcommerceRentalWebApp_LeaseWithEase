@@ -1,0 +1,146 @@
+html, body {
+    height: 100%;
+}
+
+.content-body {
+	/* Source: http://wallpaperswide.com/laptop_4-wallpapers.html */
+	background: url("../images/computers.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: calc(100% - 10vh);
+}
+
+.content-right,
+.content-center {
+	float: right;
+	width: 25%;
+}
+
+.content-left {
+	float: left;
+	width: 50%;
+	height: 100%;
+}
+
+.login-box {
+	font-family: 'PlayfairDisplay';
+	height: 40%;
+	width: 50%;
+	border: #F5F5F5 solid 1px;
+	background-color: #F5F5F5;
+	border-radius: 25px;
+	min-height: 290px;
+	min-width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 8em;
+}
+
+label {
+	margin-top: 5px;
+}
+
+.login-header span {
+	margin-top: .5em;
+	display: block;
+	font-size: 2em;
+	text-align: center;
+}
+
+.login-box-border {
+	border-bottom: 2px solid #18121E;
+	width: 70%;
+	margin: auto;
+	margin-bottom: 2em;
+}
+
+.form-item {
+	height: 5em;
+}
+
+.form-item label {
+	margin-left: 3em;
+}
+
+.form-item input {
+	display: block;
+	width: 50%;
+	float: right;
+	margin-right: 3em;
+}
+
+.form-item .btn-submit {
+	float: right;
+	margin-right: 3em;
+	width: 50%;
+}
+
+footer {
+	bottom: 0;
+	position: absolute;
+}
+
+.main {
+	height: calc(100% - 7vh);
+}
+
+/**
+ * Responsive design
+ */
+
+@media only screen and (max-width: 768px) {
+	.content-right {
+		display: none;
+	}
+
+	.content-center {
+		display: none;
+	}
+
+	.content-left {
+		float: none;
+		width: 100%;
+		height: auto;
+	}
+}
+
+@media only screen and (max-width: 320px) {
+	.content-right {
+		display: none;
+	}
+
+	.content-center {
+		display: none;
+	}
+
+	.content-left {
+		float: none;
+		width: 100%;
+		height: auto;
+	}
+
+	.login-box {
+		width: 90%;
+		min-width: auto;
+		margin-top: 3em;
+		min-height: 380px;
+	}
+
+	.form-item {
+		height: 5em;
+	}
+
+	.form-item input {
+		width: auto;
+		float: none;
+		margin-right: 3em;
+		margin-left: 3em;
+	}
+
+	.btn-submit,
+	.btn-reset {
+		float: none !important;
+		width: 70% !important;
+		margin-top: .75em !important;
+	}
+}

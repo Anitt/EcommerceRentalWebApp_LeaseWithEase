@@ -1,0 +1,10 @@
+.product-image a img {
+    /* width: 300px; */
+    /* max-height: 220px; */
+    object-fit: contain;
+    height: 12em;
+    width: 14em;
+}
+.products{
+    width: auto!important;
+}
